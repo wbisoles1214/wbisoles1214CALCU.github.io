@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/search\ gif.gif);
+}
+
+main {
+  font-family: monospace;
+  color: #6c757d;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 1ch;
+}
+
+.calc-container {
+  background-color: #fff;
+  margin: 10ch auto 0 auto;
+  width: 375px;
+  padding: 5ch 2ch 8ch 2ch;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.disp-container {
+  margin: 8px 6px;
+  font-size: 50px;
+  text-align: end;
+  padding: 3px 12px;
+  overflow: hidden;
+  border: 1.5px solid red;
+  border-radius: 5px;
+  text-shadow: 3px 3px 5px #adb5bd;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 5px;
+  gap: 0.5rem;
+}
+
+.btn-container button {
+  font-size: 20px;
+  padding: 0.75rem;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-container button:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+#btn-clear {
+  background-color: red;
+}
+
+.operator-container {
+  background-color: #44f33d;
+}
+@media screen and (max-width: 768px) {
+  .calc-container {
+    margin: 5ch auto 0 auto;
+    width: 90%;
+    padding: 3ch 1ch 6ch 1ch;
+  }
+
+  .disp-container {
+    font-size: 30px;
+    padding: 2px 8px;
+  }
+
+  .btn-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.25rem;
+    padding: 2px;
+  }
+
+  .btn-container button {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
